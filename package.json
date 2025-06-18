@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "dev": "gulp watch",
     "build": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -22,6 +23,11 @@
     "gulp": "^5.0.1",
     "gulp-plumber": "^1.2.1",
     "gulp-sass": "^6.0.1",
+    "imagemin-mozjpeg": "^10.0.0",
+    "imagemin-pngquant": "^10.0.0",
     "sass": "^1.89.1"
+  },
+  "dependencies": {
+    "gulp-imagemin": "^7.1.0"
   }
 }
