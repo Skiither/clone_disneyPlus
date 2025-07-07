@@ -23,11 +23,11 @@ function images() {
         .pipe(gulp.dest('./dist/images'));
 }
 
-// build padrãoexports.default = gulp.parallel(styles, images, scripts);
+
 
 
 exports.watch = function () {
     gulp.watch('./src/styles/**/*.scss', gulp.parallel(styles));
     gulp.watch('./src/scripts/*.js', gulp.parallel(scripts));
-    gulp.watch('./src/images/**/*', gulp.parallel(images)); // adiciona watch das imagens também
+    gulp.watch('./src/images/**/*', gulp.parallel(images)); 
 };
